@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+ <!-- estilos personalizados-->
+ <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+    <header class="Encabezado">
+        <h1>Cotización</h1>               
+    </header>
+
+    <div class="contenedor">
+        <nav class="nav-main">
+       <!--    <img src="img/brand.png" alt="alternativo" class="nav-brand">-->
+            <!-- ul para la lista de navegación-->
+            <ul class="nav-menu show">
+    <li><a href="../index.html">Negocio</a></li>
+    <li><a href="Catálogo.html">Catálogo de productos</a></li>
+    <li><a href="Cotización.html">Solicitud de cotización</a></li>
+    <li><a href="Contacto.html">Contacto</a></li>
+    <li><a href="Administrativa.html">Acceso a usuarios</a></li>
+            </ul>
+        </nav>
+    <!-- hr da una separación de página-->
+    <hr> 
+      
+    <p>
+        El formulario que se presenta a continuación tiene el objetivo de recolectar datos
+        para brindarle un mejor servicio al crear una cuenta y enviarle sus productos
+    </p>
+
+
+<form action="../php/Cotización.php" method="POST">
+    
+
+    
+        <div class="formula">
+
+
+        <p >Nombre completo:
+        <br>
+        <input type="text" name="txtnombre" ></p>
+        
+        <p>Fecha: DD/MM/AAAA
+        <br>
+        <input type="text" name="txtFecha" ></p>                            
+        
+        <p>Email:
+        <br>
+        <input type="email" name="email" > </p>                            
+        
+        <p>Ingresar Solicitud:</p>
+        <label for="textarea"></label>
+        <textarea name="area" id="textarea" cols="45" rows="5"></textarea>
+
+                                        
+<p>
+<button type="submit" value="Ingresar" >Enviar</button>
+<button type="reset" value="Cancelar" >Cancelar</button>
+</p>
+</div>
+</form>
+
+
+<section class="footer">
+
+    <div class="interno">
+<p>
+    Mauricio Tadeo Martínez Blanco PW1
+</p>
+    </div>
+
+</section>
+
+
+</body>
+</html>
